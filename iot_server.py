@@ -33,3 +33,4 @@ def register_user():
 if __name__ == "__main__":
     check_mosquitto()
     check_internet_connection()
+    register_user()
