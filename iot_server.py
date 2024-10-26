@@ -21,7 +21,7 @@ def register_user():
     print('\n')
     name = str(input("Enter Name"))
     flag_name = 0
-    while flag_name>0:
+    while flag_name<=0:
         if name.isalpha():
             print("validated")
             flag_name = 2
@@ -29,7 +29,7 @@ def register_user():
             print("Not a valid name contain not alphabet character")
             name = input("Enter Name")
             flag_name = 0
-    print("Done with Name {}".format(name))
+
 if __name__ == "__main__":
     check_mosquitto()
     check_internet_connection()
