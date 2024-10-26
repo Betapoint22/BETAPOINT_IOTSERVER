@@ -18,7 +18,7 @@ def check_internet_connection():
 
 def register_user():
     print("Please Enter username below:")
-    println()
+    print('\n')
     name = input("Enter Name")
     flag_name = 0
     while flag_name>0:
