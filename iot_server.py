@@ -22,7 +22,7 @@ def register_user():
     name = input("Enter Name")
     flag_name = 0
     while flag_name>0:
-        if name.isaplha():
+        if name.isalpha():
             print("validated")
             flag_name = 2
         else:
