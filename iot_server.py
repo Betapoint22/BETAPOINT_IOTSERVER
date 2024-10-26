@@ -19,7 +19,7 @@ def check_internet_connection():
 def register_user():
     print("Please Enter username below:")
     print('\n')
-    name = input("Enter Name")
+    name = str(input("Enter Name"))
     flag_name = 0
     while flag_name>0:
         if name.isalpha():
