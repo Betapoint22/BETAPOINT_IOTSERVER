@@ -10,7 +10,7 @@ def check_mosquitto():
 
 def check_internet_connection():
     """Checks internet connectivity."""
-    result = subprocess.run(["ping", "-c", "1", "google.com"], capture_output=True)
+    result = subprocess.run(["ping", "-c", "10", "google.com"], capture_output=True)
     if result.returncode == 0:
         print("Internet connection is available.")
     else:
@@ -19,6 +19,3 @@ def check_internet_connection():
 if __name__ == "__main__":
     check_mosquitto()
     check_internet_connection()
-
-
-    https://github.com/Betapoint22/BETAPOINT_IOTSERVER.git
