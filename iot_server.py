@@ -17,6 +17,16 @@ def check_internet_connection():
         print("Internet connection is not available.")
 
 def register_user():
+    print("Please choose your option from the Menu")
+    print("----------------------------------")
+    print('\n')
+    print("#                1. Register User")
+    print('\n')
+    print("#                2. User login")
+    print('\n')
+    print("#                3. Forgot User login")
+    print('\n')
+    print("----------------------------------")
     print("Please Enter username below:")
     print('\n')
     name = str(input("Enter Name"))
@@ -29,7 +39,7 @@ def register_user():
             print("Not a valid name contain not alphabet character")
             name = input("Enter Name")
             flag_name = 0
-
+    print("")
 if __name__ == "__main__":
     check_mosquitto()
     check_internet_connection()
