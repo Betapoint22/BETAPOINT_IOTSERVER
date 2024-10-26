@@ -10,7 +10,7 @@ def check_mosquitto():
 
 def check_internet_connection():
     """Checks internet connectivity."""
-    result = subprocess.run(["ping", "-c", "10", "www.google.com"], capture_output=True)
+    result = subprocess.run(["ping", "-c", "10", "8.8.8.8"], capture_output=True)
     if result.returncode == 0:
         print("Internet connection is available.")
     else:
