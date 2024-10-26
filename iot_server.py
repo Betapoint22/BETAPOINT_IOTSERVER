@@ -16,6 +16,20 @@ def check_internet_connection():
     else:
         print("Internet connection is not available.")
 
+def register_user():
+    print("Please Enter username below:")
+    println()
+    name = input("Enter Name")
+    flag_name = 0
+    while flag_name>0:
+        if name.isaplha():
+            print("validated")
+            flag_name = 2
+        else:
+            print("Not a valid name contain not alphabet character")
+            name = input("Enter Name")
+            flag_name = 0
+    print("Done with Name {}".format(name))
 if __name__ == "__main__":
     check_mosquitto()
     check_internet_connection()

@@ -1,9 +1,10 @@
 class User:
-    def __init__(self, user_id, username, password, role):
+    def __init__(self, user_id, username, password, role,region):
         self.user_id = user_id
         self.username = username
         self.password = password
-        self.role = role   
+        self.role = role
+        self.region = region
 
         self.devices = []
 
